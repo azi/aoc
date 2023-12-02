@@ -8,7 +8,7 @@
 ;; ==== murmur ====
 ;; 還沒整理
 ;; 一開始看到這樣的 sample Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
-;; 就在想 regex 直接就解掉, 大概像這類的去matched {1-12}red / {1-13}green / {1-14}blue
+;; 就在想 regexp 直接就解掉, 大概像這類的去matched {1-12}red / {1-13}green / {1-14}blue
 ;; 不過偶寫不出來，攤手～
 ;; 只好用跑迴圈來轉格式, 大概是這方向吧
 ;; {:1 [[[3 "blue"] [4 "red"]]
