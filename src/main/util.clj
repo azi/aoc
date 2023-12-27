@@ -8,6 +8,11 @@
    (->> (line-seq txt)
         (into []))))
 
+(defn load-sample-data [data]
+  (->> (io/reader (java.io.StringReader. data))
+       (line-seq)
+       (mapv str/trim)))
+
 (defn blank? [v] (if (seqable? v) (empty? v) (not v)))
 (def present? (complement blank?))
 
